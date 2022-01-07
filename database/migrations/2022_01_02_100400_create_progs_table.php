@@ -19,10 +19,11 @@ class CreateProgsTable extends Migration
             $table->text('company')->nullable();
             $table->string('version')->nullable();
             $table->text('description')->nullable();
-            $table->text('URL');
-            $table->double('size');
+            $table->text('URL')->nullable();
+            $table->double('size')->nullable();
+            $table->string('image')->nullable();
             //$table->bigInteger('os_id')->unsigned();
-            $table->bigInteger('category_id')->unsigned();
+            $table->bigInteger('category_id')->unsigned()->nullable();
             //$table->bigInteger('type_id')->unsigned();
             //$table->bigInteger('coretype_id')->unsigned();
             //$table->bigInteger('lisence_id')->unsigned();
