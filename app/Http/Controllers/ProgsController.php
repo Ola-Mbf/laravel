@@ -75,8 +75,8 @@ class ProgsController extends Controller
         $prog->lisence = $request->lisence;
 
         $prog->save();
-        // return redirect()->route('index-progs');
-        return $request;
+        return redirect()->route('index-progs');
+        // return $request;
     }
 
     

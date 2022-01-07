@@ -5,7 +5,7 @@
 	<div class="container text-center">
 		<h1 class="progs_title">create Programs</h1>
 
-	<form action="/progs/create" method="POST">
+	<form action="/progs/create" method="POST" enctype="multipart/form-data">
 		@csrf
 
       <label for="name">Name</label><br>
